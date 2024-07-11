@@ -1,7 +1,7 @@
 
 # Doubly Robust Estimator for Dynamic Treatment Degime
 
-This repository is dedicated to implementing the Doubly Robust Estimator with Augmented Inverse Probability Weighting (AIPW) for bias estimation in multi-stage, multi-treatment dynamic treatment regimes.
+Implementing the Doubly Robust Estimator with Augmented Inverse Probability Weighting (AIPW) for bias estimation in multi-stage, multi-treatment dynamic treatment regimes.
 
 ## AIPW Estimator Overview
 
@@ -15,6 +15,8 @@ The AIPW estimator is expressed as:
 $$
 \hat{V}_{AIPW}(d) = \mathbb{P}_n[\hat{Q}^d_1(H_1, d_1(H_1))] + \mathbb{P}_n \left[ \sum_{t=1}^T \prod_{i=1}^t \frac{1_{A_i = d_i(H_i)}}{\pi_i(A_i | H_i)} \left(Y_t - \hat{Q}^d_t(H_t, A_t) + \hat{Q}^d_{t+1}(H_{t+1}, d_t(H_{t+1}))\right) \right]
 $$
+
+
 
 Where:
 - $H_t$: History up to time $t$
